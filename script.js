@@ -65,6 +65,7 @@ document.querySelector("#simple-form").addEventListener("submit", function (evt)
                 document.querySelector(`#card${count}`).appendChild(img);
             } else {
                 document.querySelector("button#button").disabled = true;
+                document.querySelector("button#button").textContent = "All cards Used Up!!!"
             }
         })
         .catch(err => {
